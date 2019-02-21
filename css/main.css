@@ -154,6 +154,9 @@ input[type=submit] {
 i {
     color: red;
 }
+i:hover {
+    transform: scale(1.1);
+}
 #resume-download {
     margin-top: 2%;
     text-align: center;
