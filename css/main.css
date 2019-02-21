@@ -1,43 +1,211 @@
 * {
-    padding: 0;
     margin: 0;
-    font-family: 'Cardo', serif;
-  }
-  .backImg {
-    width: 100;
-    height: 100vh;
-    background-image: url("../img/bgImg.jpg");
-    background-size: cover;
+    padding: 0;
+    font-family: 'Special Elite', cursive;
+}
+#navbar {
+    position: fixed;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+}
+#navbar ul {
+    list-style: none;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    padding-right: 2%;
+}
+#navbar li {
+    margin-right: 1.5%;
+}
+#navbar a {
+    text-decoration: none;
+    color: white;
+}
+#welcome-section {
+    display: flex;
+    height: 100vh;
+}
+#welcome-text {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
     justify-content: center;
-    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#welcome-text h1 {
+    font-size: 320%;
+    margin-bottom: 10%;
+}
+#welcome-text p {
+    font-size: 220%;
+}
+h2 {
+    margin-left: 5%;
+    font-size: 200%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+
+}
+#projects {
+    background-color:#d3d3d3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+}
+#projects a {
+    text-decoration: none;
+}
+#projects img {
+    max-width: 100%;
+    max-height: 100%;
+}
+#projects div {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4%;
+}
+.project-tile {
+    border: solid white 8px;
+    border-bottom: 0px;
+    border-radius: 2%;
+}
+#projects p {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+#contact {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+#contact input {
+    margin-bottom: 2%;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 500%;
+}
+#name {
+    width: 49%;
+}
+#email {
+    width: 49%;
+    min-height: 45px;
+}
+input {
+    padding-top: 4px;
+    padding-left: 4px;
+}
+input[type=text] {
+    font-size: .3em;
+
+}
+input[type=email] {
+    font-size: .3em;
+}
+input[type=textarea] {
+    font-size: .3em;
+    
+}
+#message {
+    width: 100%;
+    padding-bottom: 200px;
+}
+input[type=submit] {
+    width: 100%;
+    padding: 1%;
+    font-size: .3em;
     color: white;
-  }
-  .profile {
-    width: 360px;
-    background-color: rgba(0,0,0,0.5);
-    padding: 30px 0;
-    border-radius: 10%;
-  }
-  img {
-    height: 250px;
-    border-radius: 70%;
-    margin-bottom: 20px;
-  }
-  .profileText {
-    margin-bottom: 20px;
-  }
-  .profileText header {
-    font-size: 2em;
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-  .profileText h3 {
-    font-size: 1.4em;
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-  i {
-    color: white;
-  }
+    background-color: red;
+}
+#social-links {
+    padding-top: 5%;
+    list-style: none;
+    display: flex;
+    padding-left: 33%;
+    padding-right: 33%;
+    justify-content: space-around;
+    
+}
+#social-links {
+    padding-bottom: 3%;
+}
+#social-links li {
+    text-decoration: none;
+}
+i {
+    color: red;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+@media only screen and (max-width: 817px) {
+    #projects {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    #projects div {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    #navbar ul {
+        justify-content: center;
+    }
+    h2 {
+        margin-left: 0%;
+        font-size: 150%;
+        padding-top: 0%;
+    
+    }
+
+}
+@media only screen and (max-width: 433px) {
+
+    #welcome-text h1 {
+        font-size: 220%;
+        margin-bottom: 10%;
+    }
+    #welcome-text p {
+        font-size: 120%;
+    }
+    h2 {
+        text-align: center;
+        margin-left: 5%;
+        font-size: 100%;
+        padding-top: 3%;
+        
+    
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 200%;
+    }
+}
+    
