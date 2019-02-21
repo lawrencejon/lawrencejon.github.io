@@ -154,6 +154,16 @@ input[type=submit] {
 i {
     color: red;
 }
+#resume-download {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 160%;
+}
+#resume-download:hover {
+    transform: scale(1.1)
+
+}
+
 footer {
     display: flex;
     justify-content: center;
