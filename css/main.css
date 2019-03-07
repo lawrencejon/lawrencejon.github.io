@@ -166,6 +166,10 @@ i:hover {
     transform: scale(1.1)
 
 }
+input[type=submit]:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
 
 footer {
     display: flex;
@@ -178,7 +182,7 @@ footer {
     #projects {
         flex-direction: column;
         align-items: center;
-        
+
     }
     #projects div {
         width: 75%;
