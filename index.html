@@ -1,111 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/main.css">
     <title>Jonathan Lawrence Portfolio</title>
-</head>
-<body>
-    <header id="navbar">
-        <ul>
-            <li>
-                <a href="#project-heading">My Projects</a>
-            </li>
-            <li>
-                <a href="#contact-heading">Contact Me</a>
-            </li>
-        </ul>           
-    </header>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> 
+<link rel="stylesheet" href="portfolio.css">
     
-    <div id="welcome-section">
-        <div id="welcome-text">
-            <h1>Hi, I'm Jonathan</h1>
-            <p>Passionate about Web design. I fiddled with HTML and
-                CSS for a couple of years and then decided to take the
-                dive and truly learn the art of Web Development.
-            </p>
-        </div>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
 
-    <!--Projects Section-->
-
-    <h2 id="project-heading">Things I've Built</h2>
-    <div id="projects">
-        <div class="project-tile">
-            <a href="https://codepen.io/jonathanlawrence/pen/xBVKGv" target="_blank">
-                <img src="img/project-js-calculator.PNG" alt="JavaScript Calculator">
-                <p><strong>JavaScript Calculator</strong></p>
-            </a>
-        </div>
-
-        <div class="project-tile">
-            <a href="https://codepen.io/jonathanlawrence/pen/pGYWjG?editors=1100" target="_blank">
-                <img src="img/project-landing-page.PNG" alt="Product Landing Page">
-                <p><strong>Product Landing Page</strong></p>
-            </a>
-        </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#projects-heading">My Projects</a></li>
+        <li><a href="#contact-heading">Contact Me</a></li>
         
-        <div class="project-tile">
-            <a href="https://codepen.io/jonathanlawrence/pen/zeMMpe" target="_blank">
-                <img src="img/project-form-page.PNG" alt="Survey Form">
-                <p><strong>Survey Form</strong></p>
-            </a>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-        </div>
-        <div class="project-tile">
-            <a href="https://codepen.io/jonathanlawrence/pen/wNYgzr" target="_blank">
-                <img src="img/project-documentation-page.PNG" alt="Technical Documentation Page">
-                <p><strong>Documentation Page</strong></p>
-            </a>
 
-        </div>
-        
-        <div class="project-tile">
-            <a href="https://codepen.io/jonathanlawrence/pen/yZjGjp" target="_blank">
-                <img src="img/project-tribute-page.PNG" alt="Tribute Page">
-                <p><strong>Tribute Page</strong></p>
-            </a>
-        </div>
-        
-     <!--Contact Me--> 
+<div class="jumbotron">
+  <div class="container greeting">
+    <h1>Hi, I'm Jonathan</h1>
+    <p>Passionate about Web design. I fiddled with HTML and CSS for a couple
+      of years and then decided to take the dive and truly learn the art of 
+      Web Development. </p>
+  </div>
+</div>
 
+<div class="container">
+  <h2 id="projects-heading">Things I've Built</h2>
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+      <div class="thumbnail">
+        <a href="https://codepen.io/jonathanlawrence/pen/xBVKGv" target="_blank">
+          <img src="img/project-js-calculator.PNG" alt="JavaScript Calculator">
+          <div class="caption">
+            <p>JavaScript Calculator</p>
+          </div>
+        </a>
+      </div>
     </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="thumbnail">
+        <a href="https://codepen.io/jonathanlawrence/pen/pGYWjG" target="_blank">
+          <img src="img/project-landing-page.PNG" alt="Project Landing Page">
+          <div class="caption">
+            <p>Product Landing Page</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="thumbnail">
+        <a href="https://codepen.io/jonathanlawrence/pen/zeMMpe" target="_blank">
+          <img src="img/project-form-page.PNG" alt="Survey Form">
+          <div class="caption">
+            <p>Survey Form</p>
+          </div>
+        </a>         
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="thumbnail"> 
+        <a href="https://codepen.io/jonathanlawrence/pen/wNYgzr" target="_blank">
+          <img src="img/project-documentation-page.PNG" alt="Documentation Page">
+          <div class="caption">
+            <p>Documentation Page</p>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="thumbnail">
+        <a href="https://codepen.io/jonathanlawrence/pen/yZjGjp" target="_blank">
+          <img src="img/project-tribute-page.PNG" alt="Tribute Page">
+          <div class="caption">
+            <p>Tribute Page</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  
+  </div>
+  <div class="container">
     <h2 id="contact-heading">Contact Me</h2>
-    <div id="contact">
-        <form action="https://formspree.io/lawrencejon97@gmail.com" method="POST">
-            <input type="text" id="name" name="name" placeholder="YOUR NAME">
-            <input type="email" id="email" name="email" placeholder="YOUR EMAIL">
-            <input type="text" id="message" name="message" placeholder="YOUR MESSAGE">
-            <input type="submit" value="Send Message">
-        </form>
-        <div id="resume-download">
-            <a href="pdf/resume-jonathan-lawrence.pdf" target="_blank">Download My Resume</a>
-
+    <form action="https://formspree.io/address@email.tld" method="POST">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-6">
+            <input type="text" name="name" placeholder="Your Name">
+          </div> 
+          <div class="col-sm-6">
+            <input type="email" name="email" placeholder="Your email">
+          </div>
         </div>
-        <ul id="social-links">
-            <li>
-                <a  id="profile-link" href="https://www.linkedin.com/in/jonathan-lawrence-b35773175/" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
-            </li>
-            <li>
-                <a href="https://github.com/lawrencejon" target="_blank"><i class="fa fa-github fa-3x"></i></a>
-            </li>
-            <li>
-                <a href="https://www.freecodecamp.org/lawrencejon" target="_blank"><i class="fa fa-free-code-camp fa-3x"></i></a>
+        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" name="submit" class="btn btn-danger">Send Message</button>
+    </form>
 
-            </li>
-            <li>
-                <a href="https://codepen.io/jonathanlawrence/#"><i class="fa fa-codepen fa-3x"></i></a>
-            </li>
-
-        </ul>
+    <div class="resume-download">
+      <a href="pdf/resume-jonathan-lawrence.pdf" target="_blank">See My Resume</a>
     </div>
-    <footer>
-    <p>©2019 Coded and designed by Jonathan Lawrence</p>
-    </footer>
-    
-</body>
+  </div>
+  <ul id="social-links" class="list-inline">
+    <li><a id="profile-link" href="https://www.linkedin.com/in/jonathan-lawrence-b35773175/" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a></li>
+    <li><a href="https://github.com/lawrencejon" target="_blank"><i class="fa fa-github fa-4x"></i></a></li>
+    <li><a href="https://www.freecodecamp.org/lawrencejon" target="_blank"><i class="fa fa-free-code-camp fa-4x"></i></a></li>
+    <li><a href="https://codepen.io/jonathanlawrence/#" target="_blank"><i class="fa fa-codepen fa-4x"></i></a></li>
+</ul>
+
+<footer>
+  <p>©2019 Coded and designed by Jonathan Lawrence</p>
+</footer>
+
+
+      
+<!--  jQuery    -->
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>    
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
 </html>
